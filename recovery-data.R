@@ -36,6 +36,8 @@ dates <- c(
 
 png("output/plot.png")
 
+pdf("output/plot.pdf")
+
 plot(dates, index, type="l", col="blue", xlab="Date", ylab="Degrees / Pounds", xaxt="n", yaxt="n", xlim=c(as.Date("2014/4/14"), as.Date("2014/9/17")), ylim=c(0, 120))
 
 axis.Date(side=1, at=dates, labels=T, format= "%m/%d", las=2)
